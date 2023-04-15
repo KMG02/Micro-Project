@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Student Enrollment</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet"
+              href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="Student.css"/>
+        <script
+        src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script
+        src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="https://login2explore.com/jpdb/resources/js/0.0.4/jpdb-commons.js"></script>
+    </head>
+    <body>
+
+
+
+        <div class="container">
+            <div class="page-header text-center">
+                <h2>School Enrollment Form</h2>
+            </div>
+            <form id="stdForm" method="get">
+                <div class="form-group">
+                    <span><label for="stdRoll">Roll Number:</label> <label 
+                            </label></span>
+                    <input type="text" class="form-control" name="stdRoll" id="roll"
+                           placeholder="Enter Roll Number:" required>
+                </div>
+                <div class="form-group">
+                    <label for="stdName"> Students Full Name:</label>
+                    <input type="text" class="form-control" id="stdName"
+                           placeholder="Enter students full Name" name="stdName">
+                </div>
+                <div class="form-group">
+                    <label for="stdClass">Students Class:</label>
+                    <input type="text" class="form-control" id="stdclass"
+                           placeholder="Enter Class(STD)" name="stdClass">
+                </div>
+
+                <div class="form-group">
+                    <label for="stdAddress">Full Address</label>
+                    <input type="text" class="form-control" id="stdAddress"
+                           placeholder="Enter Full Address " name="stdAddress">
+                </div>
+
+                <div class="form-group">
+                    <label for="stdBirth">Birth Date:</label>
+                    <input type="date" class="form-control" id="stdBirth"
+                           placeholder="Enter Std Birth Date " name="stdBirth">
+                </div>
+
+                <div class="form-group">
+                    <label for="stdEnrollment">Enrollment Date:</label>
+                    <input type="date" class="form-control" id="stdEnrollment"
+                           placeholder="Enter Std Enrollment Date " name="stdEnrollment">
+                </div>
+                <div class="button">
+                    <input type="button" class="btn btn-primary" id="stdSave" value="Save"
+                           onclick="saveStudent();">
+
+                    <input type="button" class="btn btn-success" id="stdChange" value="Update"
+                           onclick="changeStudent();">
+
+                    <input type="button" class="btn btn-danger" id="stdRest" value="Reset"
+                           onclick="resetStudent();">
+                </div>
+            </form>
+        </div>
+        <script src="Student.js"></script>
+    </body>
+</html>
